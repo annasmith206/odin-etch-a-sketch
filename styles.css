@@ -1,0 +1,21 @@
+.container{
+    height: calc(100vw - 50px);
+    width: calc(100vw - 50px);
+    align-self: center;
+    margin: auto;
+    display: flex;
+}
+
+.row {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.square {
+    flex: auto;
+}
+    
+div {
+    border: solid black 2px;
+}
