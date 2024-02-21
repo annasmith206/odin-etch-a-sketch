@@ -12,6 +12,7 @@ function createGrid(){
         for (let i = 0; i < 16; i++){
             let squareDiv = document.createElement("div");
             squareDiv.classList.add("square");
+            squareDiv.addEventListener("mouseenter", turnBlue);
             row.push(squareDiv);
             rowDiv.appendChild(squareDiv);
         }
@@ -20,4 +21,8 @@ function createGrid(){
         gridContainer.appendChild(rowDiv);
     }
     return grid;
+}
+
+function turnBlue(event){
+    event.target.style.backgroundColor = "blue";
 }
