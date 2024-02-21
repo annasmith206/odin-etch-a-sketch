@@ -1,8 +1,21 @@
-.container{
+button {
+    flex: none;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 12px auto;
     height: calc(100vh - 24px);
     width: calc(100vh - 24px);
-    align-self: center;
-    margin: 12px auto;
+}
+
+.container{
+    flex: none;
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
     display: flex;
 }
 
@@ -14,8 +27,6 @@
 
 .square {
     flex: auto;
-}
-    
-div {
     border: solid black 1px;
 }
+    
