@@ -14,7 +14,7 @@ function createGrid(size){
         for (let i = 0; i < size; i++){
             let squareDiv = document.createElement("div");
             squareDiv.classList.add("square");
-            squareDiv.addEventListener("mouseenter", turnBlue);
+            squareDiv.addEventListener("mouseenter", turnColored);
             row.push(squareDiv);
             rowDiv.appendChild(squareDiv);
         }
@@ -31,11 +31,9 @@ function destroyGrid() {
     }
 }
 
-function turnBlue(event){
-    event.target.style.backgroundColor = "blue";
+function turnColored(event){
+    event.target.style.backgroundColor = "rgb(57, 71, 59)";
 }
-
-
 
 function resizeGrid(event){
     size = Number(prompt("Please enter a number between 1 and 100: "));
