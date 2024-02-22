@@ -7,16 +7,17 @@
 }
 
 body {
-    background-color: rgb(42, 81, 48);
+    background-color: rgb(25 25 50);
 }
 
 button {
     flex: none;
-    padding: 5px 15px;
+    padding: 5px 40px;
     font-size: 20px;
     border-radius: 5px;
     border: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(119 49 255);
+    color: whitesmoke;
 }
 
 .outer-container {
@@ -34,7 +35,7 @@ button {
     width: calc(100% - 70px);
     height: calc(100% - 70px);
     display: flex;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 5px;
 }
 
