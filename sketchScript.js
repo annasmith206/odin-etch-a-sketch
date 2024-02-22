@@ -4,6 +4,8 @@ let grid = createGrid(16);
 let button = document.querySelector("button");
 button.addEventListener("click", resizeGrid);
 
+hue = 0;
+
 function createGrid(size){
     let grid = [];
     for (let i = 0; i < size; i++){
@@ -32,7 +34,8 @@ function destroyGrid() {
 }
 
 function turnColored(event){
-    event.target.style.backgroundColor = "rgb(57, 71, 59)";
+    event.target.style.backgroundColor = `hsl(${hue}, 100%, 65%)`;
+    hue = (hue + 10) % 400;
 }
 
 function resizeGrid(event){
